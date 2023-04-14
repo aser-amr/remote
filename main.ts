@@ -2,6 +2,7 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType
     radio.sendString("ButtonC_Released")
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P14, joystickbit.ButtonType.down, function () {
+    joystickbit.Vibration_Motor(50)
     radio.sendString("ButtonE_Pressed")
     basic.showString("E")
 })
@@ -13,6 +14,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("A")
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P15, joystickbit.ButtonType.down, function () {
+    joystickbit.Vibration_Motor(50)
     radio.sendString("ButtonF_Pressed")
     basic.showString("F")
 })
@@ -36,10 +38,12 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P14, joystickbit.ButtonType
     radio.sendString("ButtonE_Released")
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P13, joystickbit.ButtonType.down, function () {
+    joystickbit.Vibration_Motor(50)
     radio.sendString("ButtonD_Pressed")
     basic.showString("D")
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType.down, function () {
+    joystickbit.Vibration_Motor(50)
     radio.sendString("ButtonC_Pressed")
     basic.showString("C")
 })
